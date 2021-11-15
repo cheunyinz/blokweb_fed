@@ -32,7 +32,7 @@ Responsive
 
 ## Je website
 
-<details>
+<details open>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
@@ -44,7 +44,7 @@ Home page
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/small_screen_screenshot/product_page.jpg" width="375px" alt="dit is de product detail pagina>
+<img src="images/small_screen_screenshot/product_page.jpg" width="375px" alt="dit is de product detail pagina">
 
  
 </details>
