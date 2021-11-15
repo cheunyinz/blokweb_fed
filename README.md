@@ -43,7 +43,7 @@ Home page
 <img src="images/small_screen_screenshot/home_page.png" width="375px" alt="dit is de homepagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+Product detail page
 <img src="images/small_screen_screenshot/product_page.jpg" width="375px" alt="dit is de product detail pagina">
 
  
