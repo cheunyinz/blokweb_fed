@@ -103,9 +103,9 @@
 
 
 
-/***************/
-/* HEADER-TOP */
-/**************/
+/*******************/
+/* BOVENSTE HEADER */
+/*******************/
 
 header section:first-of-type {
   background-color: var(--accent-brand-color);
@@ -133,42 +133,21 @@ header section:first-of-type ul {
 }
 
 header section:first-of-type ul li {
-  display: none;
-  flex-shrink: 0;
-  align-items: center;
+  display: flex;
   gap: 0.5em;
 }
 
-header section:first-of-type ul li:first-of-type:hover {
-  text-decoration: underline white;
-  cursor: pointer;
-}
-
-/*bron https://piccalil.li/quick-tip/add-inline-svg-directly-in-your-css/ */
-header section:first-of-type ul li::before {
-  content: '';
-  display: flex;
-  flex-shrink: 0;
-
-  width: 1em;
-  height: 0.9em;
-  background-size: cover;
+header section:first-of-type ul li:first-of-type {
+  border: red 1px solid;
 }
 
 header section:first-of-type ul li:first-of-type::before {
-  background-image: url('/styles/icons/header-icons/phone-icon.svg');
-}
-
-header section:first-of-type ul li:nth-of-type(2)::before {
-  background-image: url('/styles/icons/header-icons/truck-icon.svg');
-}
-
-header section:first-of-type ul li:nth-of-type(3)::before {
-  background-image: url('/styles/icons/header-icons/truck-icon.svg');
-}
-
-header section:first-of-type ul li:nth-of-type(4)::before {
-  background-image: url('/styles/icons/header-icons/star-icon.svg');
+  content: '';
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="" contenteditable="false" style=""><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" class=""></path></svg>');
+  width: 1.2em;
+  height: 1.2em;
+  background-size: cover;
+  display: block;
 }
 
 header section:first-of-type svg {
@@ -178,8 +157,9 @@ header section:first-of-type svg {
 }
 
 
+
 header section:first-of-type div>p {
-  display: none;
+  display: flex;
   justify-content: flex-end;
   flex-grow: 1;
 }
@@ -193,15 +173,14 @@ body {
   margin: auto;
 }
 
-
-/***************/
-/* HEADER-NAV */
-/**************/
-header nav {
+/********************/
+/* MIDDELSTE HEADER */
+/********************/
+nav {
   background-color: var(--brand-color);
 }
 
-header nav>div {
+nav>div {
   display: flex;
   align-items: center;
   gap: 2em;
@@ -210,78 +189,39 @@ header nav>div {
 
 }
 
-header nav>div:first-of-type>ul:first-of-type {
+nav>div:first-of-type>ul:first-of-type {
   display: flex;
-  gap: 1.5em;
+  gap: 1em;
   align-items: center;
 
   list-style: none;
 }
 
-
-header nav>div:first-of-type>ul:first-of-type ul li {
-  display: flex;
-  flex-shrink: 0;
-}
-
-header nav>div:first-of-type ul li p {
+nav>div:first-of-type ul li p {
   color: var(--header-not-active-color);
   font-family: "canaromedium", sans-serif;
   font-size: 1.2em;
 }
 
-header nav>div:first-of-type ul li:last-of-type p {
-  font-family: 'Caveat', 'cursive', sans-serif;
-  font-size: 1.6em;
-}
-
-header nav>div>div:last-of-type input::placeholder {
-  color: var(--placeholder-color);
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-}
-
-header nav>div>div:last-of-type {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: flex-end;
-  gap: 1em;
-}
-
-header nav>div>div:last-of-type input {
+nav div input {
   padding: .9em 10em .9em 1em;
   border-radius: 0.25em;
   border: transparent;
-  display: flex;
-  flex-grow: 1;
 }
 
-header nav>div>div:last-of-type input::after {
-  content: '';
-  background-image: url('/styles/icons/header-icons/search-icon.svg');
-  width: 1.2em;
-  height: 1.2em;
-  background-size: cover;
-  display: block;
-}
-
-header nav>div>div:last-of-type input::placeholder {
+nav div input::placeholder {
   color: var(--placeholder-color);
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
 }
 
-header nav>div>div:last-of-type ul {
+.container div ul {
   display: flex;
   align-items: center;
+  border: solid red 1px;
   list-style: none;
   gap: 1em;
 }
-
-
-
-
 
 
 
@@ -295,26 +235,3 @@ header nav>div>div:last-of-type ul {
     width: 1152px;
   }
 }
-
-@media screen and (max-width:767px) {
-  header section:first-of-type ul li:nth-of-type(3) {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header section:first-of-type ul li, header section:first-of-type div>p {
-    display: flex;
-  }
-}
-
-/* voor als ik icons moet pakken
-footer::before {
-  content: '';
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></svg>');
-  width: 1.2em;
-  height: 1.2em;
-  background-size: cover;
-  display: block;
-}
-/*
