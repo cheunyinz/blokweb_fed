@@ -146,8 +146,7 @@ header section:first-of-type ul li:first-of-type:hover {
 
 /*bron https://piccalil.li/quick-tip/add-inline-svg-directly-in-your-css/ */
 header section:first-of-type ul li::before {
-  content: '';
-  display: flex;
+  content: 'test';
   flex-shrink: 0;
 
   width: 1em;
@@ -156,19 +155,19 @@ header section:first-of-type ul li::before {
 }
 
 header section:first-of-type ul li:first-of-type::before {
-  background-image: url('/styles/icons/header-icons/phone-icon.svg');
+  background-image: url('icons/header-icons/phone-icon.svg');
 }
 
 header section:first-of-type ul li:nth-of-type(2)::before {
-  background-image: url('/styles/icons/header-icons/truck-icon.svg');
+  background-image: url('icons/header-icons/truck-icon.svg');
 }
 
 header section:first-of-type ul li:nth-of-type(3)::before {
-  background-image: url('/styles/icons/header-icons/truck-icon.svg');
+  background-image: url('icons/header-icons/truck-icon.svg');
 }
 
 header section:first-of-type ul li:nth-of-type(4)::before {
-  background-image: url('/styles/icons/header-icons/star-icon.svg');
+  background-image: url('icons/header-icons/star-icon.svg');
 }
 
 header section:first-of-type svg {
