@@ -40,11 +40,11 @@ https://www.maxaro.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home page
-<img src="/readme_images/small_screen_screenshot/home_page.png" width="375px" alt="home pagina">
+<img src="readme_images/small_screen_screenshot/home_page.png" width="375px" alt="home pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Product detail page
-<img src="/readme_images/small_screen_screenshot/product_page.jpg" width="375px" alt="product_page">
+<img src="readme_images/small_screen_screenshot/product_page.jpg" width="375px" alt="product_page">
 
  
 </details>
@@ -79,8 +79,8 @@ Product detail page
 ### Stand van zaken
  Ik ging eerst beginnen met de desktop nav bar sinds ik de elementen eerst goede wilde zetten. Opzicht ging het goed, het was wel even puzzelen omdat het al een tijdje geleden is dat ik met css had gewerkt. 
 
-<img src="/readme_images/week_2/css-week-2.png" width="375px" alt="css">
-<img src="/readme_images/week_2/html-week-2.png" width="375px" alt="html">
+<img src="readme_images/week_2/css-week-2.png" width="375px" alt="css">
+<img src="readme_images/week_2/html-week-2.png" width="375px" alt="html">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
