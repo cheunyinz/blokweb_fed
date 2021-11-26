@@ -111,6 +111,7 @@ header section:first-of-type {
   background-color: var(--accent-brand-color);
   display: flex;
   justify-content: center;
+
 }
 
 header section:first-of-type p {
@@ -146,7 +147,7 @@ header section:first-of-type ul li:first-of-type:hover {
 
 /*bron https://piccalil.li/quick-tip/add-inline-svg-directly-in-your-css/ */
 header section:first-of-type ul li::before {
-  content: 'test';
+  content: '';
   flex-shrink: 0;
 
   width: 1em;
@@ -177,7 +178,7 @@ header section:first-of-type svg {
 }
 
 
-header section:first-of-type div>p {
+header section:first-of-type ul p:nth-of-type() {
   display: none;
   justify-content: flex-end;
   flex-grow: 1;
@@ -188,16 +189,18 @@ body {
   background-color: grey;
 }
 
-.container {
-  margin: auto;
-}
-
 
 /***************/
 /* HEADER-NAV */
 /**************/
+
+.container {
+  margin: auto;
+}
+
 header nav {
   background-color: var(--brand-color);
+  margin: auto;
 }
 
 header nav>div {
@@ -249,21 +252,17 @@ header nav>div>div:last-of-type {
 }
 
 header nav>div>div:last-of-type input {
-  padding: .9em 10em .9em 1em;
+  padding: .9em 2.5em .9em 1em;
   border-radius: 0.25em;
   border: transparent;
-  display: flex;
   flex-grow: 1;
+  width: auto;
+  background-image: url('/styles/icons/header-icons/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - .25em ) center;
+  background-size: 2em auto;
 }
 
-header nav>div>div:last-of-type input::after {
-  content: '';
-  background-image: url('/styles/icons/header-icons/search-icon.svg');
-  width: 1.2em;
-  height: 1.2em;
-  background-size: cover;
-  display: block;
-}
 
 header nav>div>div:last-of-type input::placeholder {
   color: var(--placeholder-color);
@@ -277,8 +276,6 @@ header nav>div>div:last-of-type ul {
   list-style: none;
   gap: 1em;
 }
-
-
 
 
 
