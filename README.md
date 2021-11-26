@@ -32,7 +32,7 @@ Responsive
 
 ## Je website
 
-<details open>
+<details >
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
@@ -40,11 +40,11 @@ https://www.maxaro.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home page
-<img src="images/small_screen_screenshot/home_page.png" width="375px" alt="dit is de homepagina">
+<img src="/readme_images/small_screen_screenshot/home_page.png" width="375px" alt="home pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Product detail page
-<img src="images/small_screen_screenshot/product_page.jpg" width="375px" alt="dit is de product detail pagina">
+<img src="/readme_images/small_screen_screenshot/product_page.jpg" width="375px" alt="product_page">
 
  
 </details>
@@ -77,8 +77,10 @@ Product detail page
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Ik ging eerst beginnen met de desktop nav bar sinds ik de elementen eerst goede wilde zetten. Opzicht ging het goed, het was wel even puzzelen omdat het al een tijdje geleden is dat ik met css had gewerkt. 
 
+<img src="/readme_images/week_2/css-week-2.png" width="375px" alt="css">
+<img src="/readme_images/week_2/html-week-2.png" width="375px" alt="html">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -93,9 +95,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- Ik had te veel div's die onnodig waren, ik ga nu proberen om ze te verwijderen
+- Het is gelukt om een icon in de input veld te krijgen
+- Ik heb geleerd hoe je een icon ook kan laten bewegen als je er over heen hover
 - ...
 
 </details>
