@@ -95,186 +95,292 @@
   --review-section-background: #f5f5f5;
 
   --main-text-color: #1c1c1c;
+  --mobile-menu-text-color: #504e48;
   --accent-text-color: #ffffff;
   --placeholder-color: #A3A3A3;
+
+  --mobile-menu-border-color: #cecece;
 }
 
 
+/**********/
+/*ALGEMEEN*/
+/**********/
 
+ul {
+  list-style: none;
+}
 
 
 /***************/
 /* HEADER-TOP */
 /**************/
 
-header section:first-of-type {
+header {
+  background-color: var(--brand-color);
+}
+
+header>section:first-of-type {
   background-color: var(--accent-brand-color);
   display: flex;
   justify-content: center;
 
 }
 
-header section:first-of-type p {
+header>section:first-of-type ul li p, header>section:first-of-type ul li a {
   color: var(--accent-text-color);
   font-family: 'asapregular', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 0.875em;
+  text-decoration: none;
 }
 
-header section:first-of-type div {
+header>section:first-of-type div {
   display: flex;
   min-height: 1.8em;
   align-items: center;
 }
 
-header section:first-of-type ul {
+header>section:first-of-type ul {
   display: flex;
-  list-style: none;
   gap: 2em;
+  padding: 0.25em 0em;
+  width: 100%;
 }
 
-header section:first-of-type ul li {
+header>section:first-of-type ul li {
   display: none;
   flex-shrink: 0;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.2em;
 }
 
-header section:first-of-type ul li:first-of-type:hover {
-  text-decoration: underline white;
+header>section:first-of-type ul li:nth-of-type(5) {
+  margin-left: auto;
+}
+
+header>section:first-of-type ul li:first-of-type:hover,
+header>section:first-of-type ul li:nth-of-type(5):hover,
+header>section:first-of-type ul li:last-of-type:hover  {
+  text-decoration: underline var(--accent-text-color);
   cursor: pointer;
 }
 
 /*bron https://piccalil.li/quick-tip/add-inline-svg-directly-in-your-css/ */
-header section:first-of-type ul li::before {
+header>section:first-of-type ul li::before {
   content: '';
   flex-shrink: 0;
 
-  width: 1em;
-  height: 0.9em;
+  width: 0.875em;
+  height: 0.875em;
   background-size: cover;
 }
 
-header section:first-of-type ul li:first-of-type::before {
+header>section:first-of-type ul li:first-of-type::before {
   background-image: url('icons/header-icons/phone-icon.svg');
 }
 
-header section:first-of-type ul li:nth-of-type(2)::before {
+header>section:first-of-type ul li:nth-of-type(2)::before {
   background-image: url('icons/header-icons/truck-icon.svg');
 }
 
-header section:first-of-type ul li:nth-of-type(3)::before {
+header>section:first-of-type ul li:nth-of-type(3)::before {
   background-image: url('icons/header-icons/truck-icon.svg');
 }
 
-header section:first-of-type ul li:nth-of-type(4)::before {
+header>section:first-of-type ul li:nth-of-type(4)::before {
   background-image: url('icons/header-icons/star-icon.svg');
 }
 
-header section:first-of-type svg {
-  fill: white;
-  width: 14px;
+header>section:first-of-type ul li svg {
+  fill: var(--accent-text-color);
+  width: 12px;
   height: auto;
 }
 
 
-header section:first-of-type ul p:nth-of-type() {
-  display: none;
-  justify-content: flex-end;
-  flex-grow: 1;
-}
-
-
-body {
-  background-color: grey;
-}
-
-
-/***************/
+/**************/
 /* HEADER-NAV */
 /**************/
 
-.container {
-  margin: auto;
-}
-
 header nav {
+  padding: 1em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+header>nav button {
+  width: 2.5em;
+  height: 2.5em;
+
+  padding-left: 2.5em;
+
+  overflow: hidden;
   background-color: var(--brand-color);
-  margin: auto;
+  background-image: url('/styles/icons/header-icons/hamburger-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 2em;
+  background-position: center;
+  border: none;
+
 }
 
-header nav>div {
+header nav>img {
+  height: 1em;
+  width: auto;
+  padding-left: 1em;
+  margin-right: auto;
+}
+
+header nav>ul{
   display: flex;
   align-items: center;
-  gap: 2em;
-
-  height: 4em;
-
-}
-
-header nav>div:first-of-type>ul:first-of-type {
-  display: flex;
-  gap: 1.5em;
-  align-items: center;
-
-  list-style: none;
+  flex-direction: row;
+  gap: 0.875em;
 }
 
 
-header nav>div:first-of-type>ul:first-of-type ul li {
-  display: flex;
-  flex-shrink: 0;
-}
-
-header nav>div:first-of-type ul li p {
-  color: var(--header-not-active-color);
-  font-family: "canaromedium", sans-serif;
-  font-size: 1.2em;
-}
-
-header nav>div:first-of-type ul li:last-of-type p {
-  font-family: 'Caveat', 'cursive', sans-serif;
-  font-size: 1.6em;
-}
-
-header nav>div>div:last-of-type input::placeholder {
-  color: var(--placeholder-color);
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-}
-
-header nav>div>div:last-of-type {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: flex-end;
-  gap: 1em;
-}
-
-header nav>div>div:last-of-type input {
-  padding: .9em 2.5em .9em 1em;
+header nav>input {
+  padding: .8em 2.5em .8em 1em;
+  margin-top: 0.5em;
   border-radius: 0.25em;
   border: transparent;
-  flex-grow: 1;
-  width: auto;
+  width: 100%;
   background-image: url('/styles/icons/header-icons/search-icon.svg');
   background-repeat: no-repeat;
-  background-position: calc(100% - .25em ) center;
-  background-size: 2em auto;
+  /* icon gaat 100% naar rechts en .25em naar links* Bron: Sanne 't Hoofdt*/
+  background-position: calc(100% - .25em) center;
+  background-size: 1.5em auto;
 }
 
-
-header nav>div>div:last-of-type input::placeholder {
+header nav>input::placeholder {
   color: var(--placeholder-color);
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
 }
 
-header nav>div>div:last-of-type ul {
+
+header nav>section:last-of-type {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  max-width: 21.5em;
+
+  background-color: var(--accent-text-color);
+
+  z-index: 2;
+
+  transform: translateX(-100%);
+  transition: 0.8s;
+}
+
+
+header nav section:last-of-type.openMenu {
+  transform: translateX(0%);
+  transition: 0.8s;
+}
+
+header>nav>section>button {
+  display: block;
+  background-image: url(/styles/icons/header-icons/cross_icon.svg);
+  z-index: 3;
+  position: absolute;
+  right: 1em;
+  top: 0.55em;
+  background-size: 1.8em;
+  outline: transparent;
+}
+
+header nav>section:last-of-type h3 {
+  font-family: 'asapregular', sans-serif;
+  font-weight: 200;
+  padding: 0.625em 0em 0.625em 0.875em;
+  color: var(--accent-text-color);
+  background-color: var(--brand-color);
+}
+
+header nav>section:last-of-type ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0em 1em 0em 1em;
+
   list-style: none;
+}
+
+header nav>section:last-of-type ul:first-of-type li {
+  padding: .875em 0em .875em 0em;
+}
+
+header nav>section:last-of-type ul:first-of-type li:not(:last-of-type) {
+  border-bottom: 1px solid var(--mobile-menu-border-color);
+}
+
+
+header nav>section:last-of-type ul:first-of-type li a {
+  color: var(--mobile-menu-text-color);
+  text-decoration: none;
+  font-family: 'asapregular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header nav>section:last-of-type ul:last-of-type {
+  justify-content: flex-end;
+  flex-grow: 1;
   gap: 1em;
+  padding-bottom: 1.8em;
+
+}
+
+
+
+
+
+
+/******/
+/*MAIN*/
+/******/
+main article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main article:nth-of-type(2) section {
+  padding: 1em;
+  position: relative;
+}
+
+main article:nth-of-type(2) img{
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: .2em;
+  background-image: linear-gradient(var(--main-text-color));
+}
+
+main article:nth-of-type(2) section h2 {
+  position: absolute;
+  left: 1.35em;
+  bottom: 2em;
+
+  font-family: 'asapregular';
+  font-weight: 100;
+  color: white;
+
+  background-image: url('styles/icons/header-icons/search-icon.svg');
+  background-repeat: no-repeat;
+  /* icon gaat 100% naar rechts en .25em naar links* Bron: Sanne 't Hoofdt*/
+  background-position: calc(100% - .25em) center;
+  background-size: 24px auto;
 }
 
 
@@ -285,12 +391,20 @@ header nav>div>div:last-of-type ul {
 
 
 
-@media screen and (min-width:1280px) {
-  .container {
-    max-width: 1152px;
-    width: 1152px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+/********/
+/*DESKTOP*/
+/********/
+
 
 @media screen and (max-width:767px) {
   header section:first-of-type ul li:nth-of-type(3) {
@@ -299,18 +413,120 @@ header nav>div>div:last-of-type ul {
 }
 
 @media screen and (min-width: 768px) {
-  header section:first-of-type ul li, header section:first-of-type div>p {
+
+  header section:first-of-type ul li,
+  header section:first-of-type div>p {
     display: flex;
+  }
+
+  header nav{
+    gap: 1em;
+    flex-wrap: nowrap;
+  }
+
+  header nav>img {
+    margin-right: 0;
+  }
+
+  header nav>input {
+    margin: 0 0 0 auto;
+    max-width: 26.8em;
+  }
+
+  header nav>ul {
+    order: 2;
+  }
+
+  header nav>section:last-of-type h3,
+  header nav>section:last-of-type ul:last-of-type,
+  header nav button {
+    display: none;
+  }
+
+  header nav>section:last-of-type {
+    transform: translateX(0%);
+    transition: none;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    max-width: 100%;
+  }
+
+  header nav>section:last-of-type ul:first-of-type {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    gap: 1em;
+
+  }
+
+  header nav>section:last-of-type button {
+    display: none;
+  }
+
+  header nav>section:last-of-type ul:first-of-type li {
+    padding: 0em;
+  }
+  header nav>section:last-of-type ul:first-of-type li:not(:last-of-type) {
+    border-bottom: transparent;
+  }
+
+  header nav>section:last-of-type ul:first-of-type li a {
+    color: var(--header-not-active-color);
+    font-family: "canarosemibold", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 1.3em;
+  }
+
+  header nav>section:last-of-type ul:first-of-type li:first-of-type a{
+    color: var(--accent-text-color);
+  }
+
+  header nav>section:last-of-type ul:first-of-type li a:hover{
+    color: var(--accent-text-color);
+  }
+
+  header nav>section:last-of-type ul:first-of-type li:last-of-type a{
+    font-family: 'Caveat', 'cursive', sans-serif;
+    font-size: 1.7em;
+  }
+
+/***************/
+/*MAIN DESKTOP */
+/***************/
+  main article:nth-of-type(2) {
+    flex-direction: row;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:80em) {
+  header nav>img {
+    height: 1.5em;
+  }
+
+  header>nav,
+  header>section:first-of-type ul {
+    max-width: 72em;
+    width: 72em;
+    margin: auto;
   }
 }
 
-/* voor als ik icons moet pakken
-footer::before {
-  content: '';
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></svg>');
-  width: 1.2em;
-  height: 1.2em;
-  background-size: cover;
-  display: block;
+@media screen and (min-width:92em) {
+  header>nav,
+  header>section:first-of-type ul {
+    width: 84em;
+    max-width: 84em;
+  }
 }
-/*
