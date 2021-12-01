@@ -245,7 +245,7 @@ header nav>ul{
 
 
 header nav>input {
-  padding: .8em 2.5em .8em 1em;
+  padding: .875em 2.5em .875em 1em;
   margin-top: 0.5em;
   border-radius: 0.25em;
   border: transparent;
@@ -253,8 +253,8 @@ header nav>input {
   background-image: url('icons/header-icons/search-icon.svg');
   background-repeat: no-repeat;
   /* icon gaat 100% naar rechts en .25em naar links* Bron: Sanne 't Hoofdt*/
-  background-position: calc(100% - .25em) center;
-  background-size: 1.5em auto;
+  background-position: calc(100% - .45em) center;
+  background-size: 1.8em auto;
 }
 
 header nav>input::placeholder {
