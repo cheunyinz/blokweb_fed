@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'asapbold';
-  src: url('/styles/fonts/asap-bold-webfont.woff2') format('woff2'),
-    url('/styles/fonts/asap-bold-webfont.woff') format('woff');
+  src: url('fonts/asap-bold-webfont.woff2') format('woff2'),
+    url('fonts/asap-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -20,8 +20,8 @@
 
 @font-face {
   font-family: 'asap_mediumregular';
-  src: url('/styles/fonts/asap-medium-webfont.woff2') format('woff2'),
-    url('/styles/fonts/asap-medium-webfont.woff') format('woff');
+  src: url('fonts/asap-medium-webfont.woff2') format('woff2'),
+    url('fonts/asap-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: 'asapregular';
-  src: url('/styles/fonts/asap-regular-webfont.woff2') format('woff2'),
-    url('/styles/fonts/asap-regular-webfont.woff') format('woff');
+  src: url('fonts/asap-regular-webfont.woff2') format('woff2'),
+    url('fonts/asap-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -38,8 +38,8 @@
 
 @font-face {
   font-family: 'asap_semiboldregular';
-  src: url('/styles/fonts/asap-semibold-webfont.woff2') format('woff2'),
-    url('/styles/fonts/asap-semibold-webfont.woff') format('woff');
+  src: url('fonts/asap-semibold-webfont.woff2') format('woff2'),
+    url('fonts/asap-semibold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -47,8 +47,8 @@
 
 @font-face {
   font-family: 'canaro_bookbold';
-  src: url('/styles/fonts/canaro-bold-webfont.woff2') format('woff2'),
-    url('/styles/fonts/canaro-bold-webfont.woff') format('woff');
+  src: url('fonts/canaro-bold-webfont.woff2') format('woff2'),
+    url('fonts/canaro-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -56,8 +56,8 @@
 
 @font-face {
   font-family: 'canarobook';
-  src: url('/styles/fonts/canaro-book-webfont.woff2') format('woff2'),
-    url('/styles/fonts/canaro-book-webfont.woff') format('woff');
+  src: url('fonts/canaro-book-webfont.woff2') format('woff2'),
+    url('fonts/canaro-book-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -65,8 +65,8 @@
 
 @font-face {
   font-family: 'canaromedium';
-  src: url('/styles/fonts/canaro-medium-webfont.woff2') format('woff2'),
-    url('/styles/fonts/canaro-medium-webfont.woff') format('woff');
+  src: url('fonts/canaro-medium-webfont.woff2') format('woff2'),
+    url('fonts/canaro-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -74,8 +74,8 @@
 
 @font-face {
   font-family: 'canarosemibold';
-  src: url('/styles/fonts/canaro-semibold-webfont.woff2') format('woff2'),
-    url('/styles/fonts/canaro-semibold-webfont.woff') format('woff');
+  src: url('fonts/canaro-semibold-webfont.woff2') format('woff2'),
+    url('fonts/canaro-semibold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -143,6 +143,8 @@ header>section:first-of-type div {
 
 header>section:first-of-type ul {
   display: flex;
+  justify-content: center;
+  
   gap: 2em;
   padding: 0.25em 0em;
   width: 100%;
@@ -209,6 +211,7 @@ header nav {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 1em;
+  width: 100%;
 }
 
 header>nav button {
@@ -219,7 +222,7 @@ header>nav button {
 
   overflow: hidden;
   background-color: var(--brand-color);
-  background-image: url('/styles/icons/header-icons/hamburger-icon.svg');
+  background-image: url('icons/header-icons/hamburger-icon.svg');
   background-repeat: no-repeat;
   background-size: 2em;
   background-position: center;
@@ -243,16 +246,16 @@ header nav>ul{
 
 
 header nav>input {
-  padding: .8em 2.5em .8em 1em;
+  padding: .875em 2.5em .875em 1em;
   margin-top: 0.5em;
   border-radius: 0.25em;
   border: transparent;
   width: 100%;
-  background-image: url('/styles/icons/header-icons/search-icon.svg');
+  background-image: url('icons/header-icons/search-icon.svg');
   background-repeat: no-repeat;
   /* icon gaat 100% naar rechts en .25em naar links* Bron: Sanne 't Hoofdt*/
-  background-position: calc(100% - .25em) center;
-  background-size: 1.5em auto;
+  background-position: calc(100% - .45em) center;
+  background-size: 1.8em auto;
 }
 
 header nav>input::placeholder {
@@ -289,7 +292,7 @@ header nav section:last-of-type.openMenu {
 
 header>nav>section>button {
   display: block;
-  background-image: url(/styles/icons/header-icons/cross_icon.svg);
+  background-image: url('icons/header-icons/cross_icon.svg');
   z-index: 3;
   position: absolute;
   right: 1em;
@@ -361,7 +364,7 @@ main article:nth-of-type(2) section {
 
 main article:nth-of-type(2) img{
   width: 100%;
-  max-width: 560px;
+  /* max-width: 560px; */
   height: auto;
   border-radius: .2em;
   background-image: linear-gradient(var(--main-text-color));
@@ -376,7 +379,7 @@ main article:nth-of-type(2) section h2 {
   font-weight: 100;
   color: white;
 
-  background-image: url('styles/icons/header-icons/search-icon.svg');
+  background-image: url('icons/header-icons/search-icon.svg');
   background-repeat: no-repeat;
   /* icon gaat 100% naar rechts en .25em naar links* Bron: Sanne 't Hoofdt*/
   background-position: calc(100% - .25em) center;
@@ -401,8 +404,10 @@ main article:nth-of-type(2) section h2 {
 
 
 
+
+
 /********/
-/*DESKTOP*/
+/*@MEDIA DESKTOP*/
 /********/
 
 
@@ -493,7 +498,7 @@ main article:nth-of-type(2) section h2 {
   }
 
 /***************/
-/*MAIN DESKTOP */
+/*main desktop */
 /***************/
   main article:nth-of-type(2) {
     flex-direction: row;
