@@ -40,11 +40,11 @@ https://www.maxaro.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home page
-<img src="small_screen_screenshot/home_page.png" width="375px" alt="home pagina">
+<img src="readme_images/small_screen_screenshot/home_page.png" width="375px" alt="home page">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Product detail page
-<img src="small_screen_screenshot/product_page.jpg" width="375px" alt="product_page">
+<img src="readme_images/small_screen_screenshot/product_page.jpg" alt="home page">
 
  
 </details>
@@ -57,7 +57,7 @@ Product detail page
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="week_1/breakdown-schets-homepage.png" width="375px" alt="breakdown schets">
+<img src="readme_images/week_1/breakdown-schets-homepage.png" width="375px" alt="breakdown schets">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -73,21 +73,21 @@ Product detail page
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
  Ik ging eerst beginnen met de desktop nav bar sinds ik de elementen eerst goede wilde zetten. Opzicht ging het goed, het was wel even puzzelen omdat het al een tijdje geleden is dat ik met css had gewerkt. 
 
-<img src="week_2/css-week-2.png" width="375px" alt="css">
-<img src="week_2/html-week-2.png" width="375px" alt="html">
+<img src="readme_images/week_2/html-week-2.png" width="375px" alt="html">
+ <img src="readme_images/week_2/css-week-2.png" width="375px" alt="css">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Cheun    | student 2          | student 3    | student 4        |
+| student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| Mijn files en code komen niet goed in Github  | en dit             | en ik dit    | en dan ik dat    |
+| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
@@ -108,19 +108,23 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+In principe ging het deze week goed. Ik heb mijn home pagina voor 50% af. Ik had tijdens de fysieke les ook met Sanne gezeten om al mijn divs te verwijderen omdat ik daar niet mee uitkwam. Maar na het gesprek had ik toch alle div's kunnen verwijderen. 
+
+<img src="readme_images/week_3/home_page.png" width="375px" alt="home pagina week 3">
+<img src="readme_images/week_3/html_week3.png" width="375px" alt="html code week 3">
+<img src="readme_images/week_3/css_week3.png" width="375px" alt="css code week 3">
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Cheun    | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| Wij hadden besproken over dat mijn code niet goed uitzag op Github  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
@@ -128,9 +132,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- Dat ik mijn bestanden in de juiste mappen moet uploaden in plaats van direct in de main in Github
+- Er werd aangegeven dat ik het beste eerst al mijn HTML moet opschrijven en dan pas stylen
+- De slider op mijn homepagina pas interactief maken als ik nog tijd heb sinds het niet makkelijk is.
 - ...
 
 </details>
