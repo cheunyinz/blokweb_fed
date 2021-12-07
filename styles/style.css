@@ -821,12 +821,14 @@ main>article:first-of-type {
 
 main>article:first-of-type h1 {
   font-family: 'canarosemibold', sans-serif;
+  -webkit-font-smoothing: antialiased;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 main>article:first-of-type h2 {
   font-family: 'canarosemibold', sans-serif;
+  -webkit-font-smoothing: antialiased;
   font-size: 1.5rem;
   margin: 1.5rem 0rem 1rem 0rem;
 }
