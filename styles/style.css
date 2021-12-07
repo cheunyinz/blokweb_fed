@@ -572,6 +572,7 @@ main>section:nth-of-type(3) ul li a:hover {
 
 main>section:nth-of-type(3) ul li a:focus {
   outline: 0.3125em auto var(--brand-color);
+  transition: .3s;
 }
 
 main>section:nth-of-type(3) ul li::before {
@@ -802,6 +803,11 @@ main>section:nth-of-type(5) div a {
   text-decoration: none;
 }
 
+main>section:nth-of-type(5) div a:focus-visible {
+  outline: 0.3125em auto var(--main-text-color);
+  transition: .3s;
+}
+
 
 
 
@@ -841,6 +847,11 @@ main>article:first-of-type p a{
 
 main>article:first-of-type p a:hover{
   color: var(--over-ons-a-hover-color);
+}
+
+main>article:first-of-type p a:focus-visible {
+  outline: 0.3125em auto var(--brand-color);
+  transition: .3s;
 }
 
 
