@@ -152,15 +152,18 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
 #### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+Wanneer je alleen TAB gebruik gaat die qua volgorder van links naar rechts naar recht naar links. Dit heeft te maken omdat ik flex-direction row reverse gebruik. Sinds ik het responsive probeer te maken weet ik niet exact hoe ik dit oplos
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
 #### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Ons assortiment  anchor links in plaats van underline de tekst dikker maken tijdens hover zodat het makkelijker wordt om te zien en er ook mooier uitziet.
+<img src="readme_images/week_4/old_hover_ons_assortiment.png" alt="oud hover assortiment">
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+In plaats van :hover underline scale gebruiken.
+<img src="readme_images/week_4/nieuw_hover_ons_assortiment.png" alt="nieuw hover assortiment">
 
 
 #### Titel volgende bevinding. 
