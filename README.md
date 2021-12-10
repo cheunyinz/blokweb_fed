@@ -205,9 +205,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- Ik heb geleerd hoe ik plaatjes kan laten snappen
+- Details en summary geleerd
+- Dat ik d.m.v. boxshadow ook een outline kan krijgen tijdens hover
 - ...
 
 </details>
