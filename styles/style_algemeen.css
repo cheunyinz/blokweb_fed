@@ -102,6 +102,8 @@
   --ons-assortiment-border-color: #d8d8d8;
   --over-ons-a-hover-color: #333;
 
+  --product-page-h1: #15120a;
+
   --mobile-menu-border-color: #cecece;
   --mobile-menu-last-ul-text-color: #a8a7a4;
 
@@ -122,8 +124,8 @@
 } 
 
 .container {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /*********/
@@ -242,7 +244,7 @@ header nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
@@ -322,7 +324,7 @@ header nav>section:last-of-type {
 
 header nav section:last-of-type.openMenu {
   opacity: 1;
-  transition: 0.8s;
+  transition: 0.2s;
   z-index: 2;
 }
 
