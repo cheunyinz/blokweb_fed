@@ -9,7 +9,7 @@ main>ul:first-of-type {
     gap: 3px;
 }
 
-main>ul li:not(:nth-of-type(3)) {
+main>ul:first-of-type li:not(:nth-of-type(3)) {
     display: none;
 }
 
@@ -20,7 +20,7 @@ main>ul li{
     align-items: center;
 }
 
-main>ul li:nth-of-type(3)::before {
+main>ul:first-of-type li:nth-of-type(3)::before {
     content: '';
     flex-shrink: 0;
 
@@ -97,24 +97,399 @@ main>section:first-of-type ul:first-of-type img {
     display: block;
 }
 
-main>section:first-of-type form:first-of-type {
+main>section:first-of-type>form{
     display: none;
 }
 
-main>section:first-of-type section:first-of-type {
+main>section:first-of-type p:nth-of-type(2) {
+    font-size: 2rem;
+    font-family: 'asap_mediumregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: var(--main-text-color) ;
+}
+
+main>section:first-of-type p:nth-of-type(3) {
+    color:var(--product-on-stock-text-color);
+    font-family: 'asapbold';
+    font-size: .875rem;
+}
+
+main>section:first-of-type p:nth-of-type(3)::before {
+    padding-left: .875rem;
+    content:'';
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    background-image: url(../styles/icons/main-tweede-pagina-icons/product-on-stock-check.svg);
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: center;
+}
+
+main>section:first-of-type p:last-of-type {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'asapregular';
+    color: var(--main-tertiary-text-color);
+    font-size: .875rem;
+    margin-right: .25rem;
+}
+
+main>section:first-of-type p:last-of-type::before {
+    padding-left: .875rem;
+    content:'';
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    background-image: url(../styles/icons/main-tweede-pagina-icons/green-check-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    background-position: center;
+}
+
+main>section:first-of-type p:last-of-type strong {
+    -webkit-font-smoothing: antialiased;
+    font-weight: lighter;
+    font-family: 'asap_mediumregular';
+}
+
+main>section:first-of-type section {
    border-top: 1px solid var(--mobile-menu-border-color);
 }
 
 
+/***********************/
+/*mobile in winkelwagen*/
+/***********************/
+
+main>section:first-of-type section{
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid var(--mobile-product-page-cta-bar-border);
+    position: fixed;
+    z-index: 1;
+    background-color: var( --accent-text-color);
+    padding: 0.75rem 1rem;
+    min-height:3rem;
+}
+
+main>section:first-of-type section>button{
+    padding: 0px 2rem;
+    flex-grow: 1;
+    justify-content: center;
+
+    background-color: var(--mobile-product-page-cta-button-color);
+    box-shadow: 0 2px 0 var( --cart-cta-button-box-shadow), 0 2px 0 var(--mobile-product-page-cta-button-color);
+    border: none;
+    border-radius: 4px;
+    appearance: none;
+
+    font-family:'asap_mediumregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: lighter;
+    color: white;
+    font-size: 1rem;
+    min-height: 3rem;
+}
+
+main>section:first-of-type section>form {
+    display: grid;
+    grid-template-columns: 1fr 1rem;
+    border: 1px solid var(--product-page-amount-counter-border);
+    border-radius: 3px;
+    margin-right: 0.75rem;
+    overflow: hidden;
+}
+
+main>section:first-of-type section input[type="number"] {
+    grid-row-start:1;
+    grid-row-end:3;
+    border: transparent;
+    text-align: center;
+    height: 2.875rem;
+    width: 3rem;
+}
+
+main>section:first-of-type section>form button {
+    width: 1rem;
+    height: 1rem;
+    appearance: none;
+    padding-left: 1rem;
+    overflow: hidden;
+    background-color: var(--accent-text-color);
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: center;
+    border: none;
+}
+
+main>section:first-of-type section>form button:hover {
+  cursor: pointer;
+}
+
+main>section:first-of-type section button[aria-label="plus 1 hoeveelheid"] {
+    background-image: url(../styles/icons/main-tweede-pagina-icons/arrow-up-icon.svg);
+    align-self: end;
+}
+
+main>section:first-of-type section button[aria-label="min 1 hoeveelheid"] {
+    background-image: url(../styles/icons/main-tweede-pagina-icons/arrow-down-icon.svg);
+    align-self: start;
+}
+
+
+/*********************/
+/*de drie speerpunten*/
+/*********************/
+
+main>section:nth-of-type(2) ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    border-top: solid 1px var(--mobile-menu-border-color);
+    border-bottom: solid 1px var(--mobile-menu-border-color);
+} 
+
+main>section:nth-of-type(2) ul li  {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: .25rem;
+}
+
+main>section:nth-of-type(2) ul li p  {
+    color: var(--main-tertiary-text-color);
+    font-size: .875rem;
+    font-family: 'asapregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+main>section:nth-of-type(2) ul li::before {
+    content: '';
+    flex-shrink: 0;
+
+    width: 1.25rem;
+    height: 1.25rem;
+    background-size: auto;
+    background-image: url('icons/main-tweede-pagina-icons/green-check-icon.svg');
+    background-repeat: no-repeat;
+}
+
+main>section:nth-of-type(2) ul li p strong {
+    -webkit-font-smoothing: antialiased;
+    font-weight: lighter;
+    font-family: 'asap_mediumregular';
+}
+/*****************/
+/*product details*/
+/*****************/
+
+main>article>* {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main>article>ul:first-of-type {
+    display: none;
+}
+
+main>article details {
+    border-bottom: 1px solid var(--mobile-menu-border-color) ;
+}
+
+main>article>details summary {
+    padding: 1rem 0rem;
+
+    font-family: 'asap_mediumregular', sans-serif;
+    font-size: 1.125rem;
+    -webkit-font-smoothing: antialiased;
+    color: var(--main-tertiary-text-color);
+    
+    list-style-type: none;
+    background-image: url(../styles/icons/main-tweede-pagina-icons/arrow-down-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: 100% center;
+
+}
+
+main>article>details summary:hover {
+    cursor: pointer;
+}
+
+main>article details[open] summary{
+    background-image: url(../styles/icons/main-tweede-pagina-icons/arrow-up-icon.svg);
+} 
+
+
+main>article dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main>article dl dt,
+main>article dl dd {
+    width: 50%;
+    padding: 0.625rem 0.5rem;
+    font-family: 'asapregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+main>article dl dt:nth-child(4n+1),
+main>article dl dd:nth-child(4n+2){
+    background-color: var(--review-section-background) ;
+    color: var( --product-page-detail-text-color);
+}
+
+main>article dl dd:nth-child(4n+2) {
+    color: var(--main-tertiary-text-color);
+}
+
+main>article dl dt{
+    color: var(--product-page-detail-text-color);
+}
+
+main>article dl dd{
+    color: var(--main-tertiary-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width:48em) {
-    main>ul li:not(:nth-of-type(3)), main>ul li:not(:last-of-type)::after {
+    main>ul:first-of-type li:not(:nth-of-type(3)), main>ul:first-of-type li:not(:last-of-type)::after {
         display: flex;
     }
 
-    main>ul li:nth-of-type(3)::before {
+    main>ul:first-of-type li:nth-of-type(3)::before {
         display: none;
     }
+    /****************************/
+    /*globaal product informatie*/
+    /****************************/
+
+    main>section:first-of-type {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 1rem;
+        column-gap: 2rem;
+        grid-template-rows: 3.25rem 2.125rem 2rem 1.3125rem 4rem 1.3125rem 1fr 6.875rem;
+    }
+
+    main>section:first-of-type>form {
+        display: flex;
+        gap: 0.75rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main>section:first-of-type>form button {
+        appearance: none;
+        display: block;
+        box-sizing: content-box;
+        width: 3.75rem;
+        height: 3.75rem;
+        padding: .75rem;
+        overflow: hidden;
+        border: 2px solid var(--mobile-product-page-cta-bar-border);
+        border-radius: 3px;
+
+        background-color: white;
+        background-size: 3.75rem;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    main>section:first-of-type>form button[aria-label="foto impressie wastafelkraan"] {
+        background-image: url(../images/product_page/product-pictures/inbouw-wastafelkraan.jpeg);
+        border: none;
+        box-shadow: 0 0 0 2px var(--brand-color);
+    }
+
+    main>section:first-of-type>form button[aria-label="foto impressie badkamer"] {
+        background-image: url(../images/product_page/product-pictures/badkamer.jpeg);
+    }
+
+    main>section:first-of-type>form button[aria-label="foto impressie technische tekening"] {
+        background-image: url(../images/product_page/product-pictures/technisch-tekening.jpeg);
+    }
+
+    main>section:first-of-type section {
+        position: static;
+        border-top: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    main>section:first-of-type>ul:first-of-type {
+        grid-row: 1 / 8;
+    }
+
+    main>section:first-of-type>ul:first-of-type img {
+        max-width: 28rem;
+        width: 100%;
+        height: auto;
+    }
+
+    main>section:first-of-type>form:first-of-type {
+        grid-row: 8 / 9;
+    }
+
+    /**************/
+    /*3 USP punten*/
+    /**************/
+    main>section:last-of-type {
+        background-color: var(--product-page-3-usp-background);
+    } 
+
+    main>section:last-of-type ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0rem;
+        height: 5.5rem;
+        border-top: none;
+        border-bottom: none;
+        justify-content: space-evenly;
+    } 
+
+    main>section:last-of-type ul li  {
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    main>section:last-of-type ul li p  {
+        color: var(--main-tertiary-text-color);
+        font-size: 1rem;
+        font-family: 'asapregular', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    main>section:last-of-type ul li::before {
+        background-image: url('icons/main-tweede-pagina-icons/usp-check-icon.svg');
+        margin-right: .5rem;
+    }
 }
+
+
 
 @media screen and (min-width:80em) {
     main>ul:first-of-type {
