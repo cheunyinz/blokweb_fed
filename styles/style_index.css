@@ -6,7 +6,7 @@
 /******/
 
 main>section:first-of-type {
-  display: none; /*TIJDELIJK */
+  display: none; 
 }
 
 main>section:nth-of-type(2) {
@@ -15,7 +15,7 @@ main>section:nth-of-type(2) {
   padding: 1em;
   margin-bottom: 2em;
   gap: 2em;
-  margin-top: 2em; /*TIJDELIJK */
+  margin-top: 2em; 
 }
 
 
@@ -27,11 +27,6 @@ main>section:nth-of-type(2) a {
   overflow: hidden;
   transition: .3s;
 }
-
-/* main>section:nth-of-type(2) a:hover {
-  transform: scale(1.08);
-  transition: .3s;
-} */
 
 main>section:nth-of-type(2) a:focus-visible {
   outline: 0.5em solid var(--brand-color);
@@ -64,7 +59,6 @@ main>section:nth-of-type(2)>a::after {
 
 main>section:nth-of-type(2)>a img {
   width: 100%;
-  /* max-width: 560px; */
   height: auto;
   display: block;
 }

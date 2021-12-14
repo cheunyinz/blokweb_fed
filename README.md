@@ -28,8 +28,6 @@ Responsive
 
 
 
-
-
 ## Je website
 
 <details >
@@ -108,7 +106,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
@@ -166,17 +164,6 @@ In plaats van :hover underline scale gebruiken.
 <img src="readme_images/week_4/nieuw_hover_ons_assortiment.png" alt="nieuw hover assortiment">
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
 </details>
 
 
@@ -185,11 +172,11 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-De laatste week was niet makkelijk. I.v.m. vormgeving moest ik veel inhalen voor FED. Ik moest toen keuzes maken wat ik nog ga maken. Of een makkelijk tweede pagina en extra animatie of een moeiijk pagina met minder animatie. Ik koos voor de tweede omdat ik responsive doe.
+De laatste week was niet makkelijk. I.v.m. vormgeving moest ik veel inhalen voor FED. Ik moest toen keuzes maken wat ik nog ga maken. Of een makkelijk tweede pagina en extra animatie of een moeiijk pagina met minder animatie. Ik koos voor de tweede omdat ik responsive doe
 
 
 ### Agenda voor meeting
@@ -206,9 +193,7 @@ samen met je groepje opstellen
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - gebruik maken van clamp
-- punt 2
-- nog een punt
-- ...
+- gebruik maken van details en summary voor mijn product pagina
 
 </details>
 
@@ -222,7 +207,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Moeilijk
+- geen div's gebruiken
 
 ### Screenshot(s)
 
@@ -241,8 +228,9 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Sanne 't Hooft
+2. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl</a>
+3. <a href="https://www.youtube.com/kepowob">https://www.youtube.com/kepowob</a>
 
 </details>
+
