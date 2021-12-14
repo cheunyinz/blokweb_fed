@@ -13,7 +13,7 @@ main>ul:first-of-type li:not(:nth-of-type(3)) {
     display: none;
 }
 
-main>ul li{
+main>ul li {
     position: relative;
     display: flex;
     gap: 3px;
@@ -31,7 +31,7 @@ main>ul:first-of-type li:nth-of-type(3)::before {
     background-repeat: no-repeat;
 }
 
-main>ul li:not(:last-of-type)::after{
+main>ul li:not(:last-of-type)::after {
     content: '';
     flex-shrink: 0;
     width: 1rem;
@@ -55,13 +55,13 @@ main>ul li:last-of-type a {
     color: var(--mobile-menu-last-ul-text-color);
 }
 
-/*************************/
+/*********************************/
 /*main product globaal informatie*/
-/*************************/
+/*********************************/
 
 main>section:first-of-type h1 {
     font-size: 1.25rem;
-    color: var( --product-page-h1);
+    color: var(--product-page-h1);
     font-family: 'asap_mediumregular', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
@@ -91,13 +91,13 @@ main>section:first-of-type ul:first-of-type li {
 }
 
 main>section:first-of-type ul:first-of-type img {
-    width:14.375rem;
+    width: 14.375rem;
     height: 14.375rem;
     margin: auto;
     display: block;
 }
 
-main>section:first-of-type>form{
+main>section:first-of-type>form {
     display: none;
 }
 
@@ -105,18 +105,18 @@ main>section:first-of-type p:nth-of-type(2) {
     font-size: 2rem;
     font-family: 'asap_mediumregular', sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: var(--main-text-color) ;
+    color: var(--main-text-color);
 }
 
 main>section:first-of-type p:nth-of-type(3) {
-    color:var(--product-on-stock-text-color);
+    color: var(--product-on-stock-text-color);
     font-family: 'asapbold';
     font-size: .875rem;
 }
 
 main>section:first-of-type p:nth-of-type(3)::before {
     padding-left: .875rem;
-    content:'';
+    content: '';
     width: 1rem;
     height: 1rem;
     margin-right: 0.5rem;
@@ -136,7 +136,7 @@ main>section:first-of-type p:last-of-type {
 
 main>section:first-of-type p:last-of-type::before {
     padding-left: .875rem;
-    content:'';
+    content: '';
     width: 1.25rem;
     height: 1.25rem;
     margin-right: 0.5rem;
@@ -153,7 +153,7 @@ main>section:first-of-type p:last-of-type strong {
 }
 
 main>section:first-of-type section {
-   border-top: 1px solid var(--mobile-menu-border-color);
+    border-top: 1px solid var(--mobile-menu-border-color);
 }
 
 
@@ -161,7 +161,7 @@ main>section:first-of-type section {
 /*mobile in winkelwagen*/
 /***********************/
 
-main>section:first-of-type section{
+main>section:first-of-type section {
     display: flex;
     align-items: center;
     left: 0;
@@ -170,23 +170,23 @@ main>section:first-of-type section{
     border-top: 1px solid var(--mobile-product-page-cta-bar-border);
     position: fixed;
     z-index: 1;
-    background-color: var( --accent-text-color);
+    background-color: var(--accent-text-color);
     padding: 0.75rem 1rem;
-    min-height:3rem;
+    min-height: 3rem;
 }
 
-main>section:first-of-type section>button{
+main>section:first-of-type section>button {
     padding: 0px 2rem;
     flex-grow: 1;
     justify-content: center;
 
     background-color: var(--mobile-product-page-cta-button-color);
-    box-shadow: 0 2px 0 var( --cart-cta-button-box-shadow), 0 2px 0 var(--mobile-product-page-cta-button-color);
+    box-shadow: 0 2px 0 var(--cart-cta-button-box-shadow), 0 2px 0 var(--mobile-product-page-cta-button-color);
     border: none;
     border-radius: 4px;
     appearance: none;
 
-    font-family:'asap_mediumregular', sans-serif;
+    font-family: 'asap_mediumregular', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: lighter;
     color: white;
@@ -204,8 +204,8 @@ main>section:first-of-type section>form {
 }
 
 main>section:first-of-type section input[type="number"] {
-    grid-row-start:1;
-    grid-row-end:3;
+    grid-row-start: 1;
+    grid-row-end: 3;
     border: transparent;
     text-align: center;
     height: 2.875rem;
@@ -226,7 +226,7 @@ main>section:first-of-type section>form button {
 }
 
 main>section:first-of-type section>form button:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 main>section:first-of-type section button[aria-label="plus 1 hoeveelheid"] {
@@ -250,9 +250,9 @@ main>section:nth-of-type(2) ul {
     padding: 1rem 1rem;
     border-top: solid 1px var(--mobile-menu-border-color);
     border-bottom: solid 1px var(--mobile-menu-border-color);
-} 
+}
 
-main>section:nth-of-type(2) ul li  {
+main>section:nth-of-type(2) ul li {
     position: relative;
     display: flex;
     align-items: center;
@@ -260,7 +260,7 @@ main>section:nth-of-type(2) ul li  {
     gap: .25rem;
 }
 
-main>section:nth-of-type(2) ul li p  {
+main>section:nth-of-type(2) ul li p {
     color: var(--main-tertiary-text-color);
     font-size: .875rem;
     font-family: 'asapregular', sans-serif;
@@ -281,23 +281,27 @@ main>section:nth-of-type(2) ul li::before {
 main>section:nth-of-type(2) ul li p strong {
     -webkit-font-smoothing: antialiased;
     font-weight: lighter;
-    font-family: 'asap_mediumregular';
+    font-family: 'asap_mediumregular', sans-serif;
 }
+
 /*****************/
 /*product details*/
 /*****************/
 
+/* algemeen styling*/
 main>article>* {
     padding-left: 1em;
     padding-right: 1em;
 }
 
-main>article>ul:first-of-type {
-    display: none;
+main>article.container {
+    padding: 0;
 }
 
-main>article details {
-    border-bottom: 1px solid var(--mobile-menu-border-color) ;
+main>article p {
+    font-family: 'asapregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
 }
 
 main>article>details summary {
@@ -307,7 +311,7 @@ main>article>details summary {
     font-size: 1.125rem;
     -webkit-font-smoothing: antialiased;
     color: var(--main-tertiary-text-color);
-    
+
     list-style-type: none;
     background-image: url(../styles/icons/main-tweede-pagina-icons/arrow-down-icon.svg);
     background-repeat: no-repeat;
@@ -320,14 +324,155 @@ main>article>details summary:hover {
     cursor: pointer;
 }
 
-main>article details[open] summary{
+main>article details[open] summary {
     background-image: url(../styles/icons/main-tweede-pagina-icons/arrow-up-icon.svg);
-} 
+}
 
+main>article details {
+    border-bottom: 1px solid var(--mobile-menu-border-color);
+}
+
+main>article>details:first-of-type {
+    border-top: 1px solid var(--mobile-menu-border-color);
+}
+
+main>article>details:last-of-type, main>article>details:last-of-type details:last-of-type {
+    border-bottom: none;
+}
+
+
+
+/*categories nav*/
+main>article>ul:first-of-type {
+    display: none;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 1.5rem;
+    margin-top: 3em;
+    border-bottom: 1px solid var(--mobile-menu-border-color);
+}
+
+main>article>ul:first-of-type li {
+    flex-shrink: 0;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.5rem;
+}
+
+main>article>ul:first-of-type li:active {
+    border-bottom: 4px var(--brand-color) solid;
+}
+
+main>article>ul:first-of-type a {
+    font-family: 'asapregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: var(--product-page-detail-text-color);
+}
+
+main>article>ul:first-of-type a:hover {
+    color: var(--brand-color);
+}
+
+
+/*let op sectie*/
+
+main>article>section {
+    background-color: var(--product-page-warning-background);
+    padding-top: 1.5rem;
+    padding-bottom: 1.125rem;
+    margin: 1.3125rem 0rem;
+}
+
+main>article>section p:first-of-type {
+    font-size: 1.125rem;
+    font-family: 'canarosemibold', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: .25rem;
+}
+
+main>article>section p:last-of-type {
+    font-size: 1rem;
+    font-family: 'asapregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: var(--product-page-warning-text-color);
+}
+
+main>article>section p:first-of-type::before {
+    content: '';
+    background-image: url(../styles/icons/main-tweede-pagina-icons/warning-icon.svg);
+    background-size: 1.625rem;
+    background-repeat: no-repeat;
+
+    height: 1.625rem;
+    width: 1.625rem;
+
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+
+}
+
+/*product voordelen*/
+
+main>article>details:first-of-type ul li {
+    display: flex;
+    margin-bottom: .5rem;
+    color: var(--main-tertiary-text-color);
+}
+
+main>article>details:first-of-type ul li::before {
+    content: '';
+    background-image: url(../styles/icons/main-tweede-pagina-icons/productvoordelen-icon.svg);
+    background-size: 1.1875rem;
+    background-repeat: no-repeat;
+
+    height: 1.1875rem;
+    width: 1.1875rem;
+
+    margin-right: 0.875rem;
+    flex-shrink: 0;
+}
+
+/*product omschrijving*/
+
+main>article>details:nth-of-type(2) p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+main>article>details:nth-of-type(2) p,
+main>article>details:nth-of-type(2) p strong {
+    color: var(--product-page-warning-text-color);
+}
+
+main>article>details p strong {
+    font-family: 'asap_mediumregular';
+    -webkit-font-smoothing: antialiased;
+    font-weight: lighter;
+}
+
+
+/*product specificaties*/
 
 main>article dl {
     display: flex;
     flex-wrap: wrap;
+}
+
+main>article details:nth-of-type(3) p:not(:last-of-type) {
+    font-family: 'asapbold';
+    -webkit-font-smoothing: antialiased;
+    margin: .5rem 0;
+}
+
+main>article details:nth-of-type(3) p:last-of-type {
+    background-color: var(--review-section-background);
+    color: var(--product-page-detail-text-color);
+    padding: 0.625rem 0rem;
+    margin-bottom: 2rem;
 }
 
 main>article dl dt,
@@ -339,27 +484,99 @@ main>article dl dd {
 }
 
 main>article dl dt:nth-child(4n+1),
-main>article dl dd:nth-child(4n+2){
-    background-color: var(--review-section-background) ;
-    color: var( --product-page-detail-text-color);
+main>article dl dd:nth-child(4n+2) {
+    background-color: var(--review-section-background);
+    color: var(--product-page-detail-text-color);
 }
 
 main>article dl dd:nth-child(4n+2) {
     color: var(--main-tertiary-text-color);
 }
 
-main>article dl dt{
+main>article dl dt {
     color: var(--product-page-detail-text-color);
+    padding-left: 2rem;
 }
 
-main>article dl dd{
+main>article dl dd {
     color: var(--main-tertiary-text-color);
 }
 
 
+/*standaard meegeleverd*/
+
+main>article>details:nth-of-type(4) {
+    border-bottom: none;
+}
+
+main>article>details:nth-of-type(4) ul {
+    list-style: disc;
+    padding-left: 1.8rem;
+}
+
+main>article>details:nth-of-type(4) ul li {
+    font-family: 'asapregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: var(--product-page-warning-text-color);
+}
 
 
+/*downloads*/
 
+main>article>details:nth-of-type(5) {
+    border-top: 1px solid var(--mobile-menu-border-color);
+}
+
+main>article>details:nth-of-type(5) ul li:first-of-type {
+    margin-bottom: .6rem;
+}
+
+main>article>details:nth-of-type(5) ul li {
+    margin-bottom: 2rem;
+}
+
+main>article>details:nth-of-type(5) a {
+    display: flex;
+
+    color: var(--brand-color);
+    text-decoration: underline;
+    font-family: 'asapregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+main>article>details:nth-of-type(5) a::before {
+    content: '';
+    background-image: url(../styles/icons/main-tweede-pagina-icons/pdf-icon.svg);
+    background-size: 1.3125rem;
+    background-repeat: no-repeat;
+
+    height: 1.3125rem;
+    width: 1.3125rem;
+
+    margin-right: 0.875rem;
+    flex-shrink: 0;
+}
+
+/*veelgestelde vragen*/
+main>article>details:last-of-type details summary {
+    font-size: 1rem;
+    font-family: 'asapregular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    background-image: url(../styles/icons/main-tweede-pagina-icons/arrow-down-icon.svg);
+    background-size: 1rem;
+    background-position: calc(100% - .2rem);
+}
+
+main>article>details details[open] summary {
+    background-image: url(../styles/icons/main-tweede-pagina-icons/arrow-up-icon.svg);
+}
+
+main>article>details details p {
+    font-size: .875rem;
+    -webkit-font-smoothing: antialiased;
+    color: var(--main-tertiary-text-color);
+}
 
 
 
@@ -375,13 +592,16 @@ main>article dl dd{
 
 
 @media screen and (min-width:48em) {
-    main>ul:first-of-type li:not(:nth-of-type(3)), main>ul:first-of-type li:not(:last-of-type)::after {
+
+    main>ul:first-of-type li:not(:nth-of-type(3)),
+    main>ul:first-of-type li:not(:last-of-type)::after {
         display: flex;
     }
 
     main>ul:first-of-type li:nth-of-type(3)::before {
         display: none;
     }
+
     /****************************/
     /*globaal product informatie*/
     /****************************/
@@ -391,7 +611,7 @@ main>article dl dd{
         grid-template-columns: 50% 50%;
         margin-top: 1rem;
         column-gap: 2rem;
-        grid-template-rows: 3.25rem 2.125rem 2rem 1.3125rem 4rem 1.3125rem 1fr 6.875rem;
+        grid-template-rows: 3.25rem 2.125rem 2rem 1.8rem 4rem 1.3125rem 1fr 6.875rem;
     }
 
     main>section:first-of-type>form {
@@ -454,12 +674,16 @@ main>article dl dd{
         grid-row: 8 / 9;
     }
 
+    main>section:first-of-type p:nth-of-type(3) {
+        align-self: center;
+    }
+
     /**************/
     /*3 USP punten*/
     /**************/
     main>section:last-of-type {
         background-color: var(--product-page-3-usp-background);
-    } 
+    }
 
     main>section:last-of-type ul {
         display: flex;
@@ -469,14 +693,14 @@ main>article dl dd{
         border-top: none;
         border-bottom: none;
         justify-content: space-evenly;
-    } 
+    }
 
-    main>section:last-of-type ul li  {
+    main>section:last-of-type ul li {
         flex-shrink: 0;
         flex-grow: 1;
     }
 
-    main>section:last-of-type ul li p  {
+    main>section:last-of-type ul li p {
         color: var(--main-tertiary-text-color);
         font-size: 1rem;
         font-family: 'asapregular', sans-serif;
@@ -487,6 +711,20 @@ main>article dl dd{
         background-image: url('icons/main-tweede-pagina-icons/usp-check-icon.svg');
         margin-right: .5rem;
     }
+
+    /*****************/
+    /*product details*/
+    /*****************/
+    
+    main>article>* {
+        padding-left: 1rem;
+        width: clamp(22rem, 55%, 48rem);
+    }
+
+    main>article>ul:first-of-type {
+        display: flex;
+    }
+
 }
 
 
@@ -495,4 +733,4 @@ main>article dl dd{
     main>ul:first-of-type {
         margin-top: .5em;
     }
-  }
+}

@@ -5,8 +5,12 @@ const closeMenuBtn= document.querySelector ("header>nav>section:last-of-type>but
 const navMenu = document.querySelector('header nav>section:last-of-type')
 
 function toggleMenu() {
-    navMenu.classList.toggle('openMenu')
-    console.log ("test")
+    navMenu.classList.toggle('openMenu');
+    if (navMenu.classList.contains('openMenu')) {
+        navMenu.classList.remove('closed ') 
+    } else {
+        navMenu.classList.add('closed')
+    }
 }
 
 openMenuBtn.addEventListener ('click', toggleMenu)

@@ -54,7 +54,7 @@
 			</ul>
 
 			<!--BEGIN MOBILE NAV-->
-			<!-- <section>
+			<section>
 				<h3>
 					Menu
 				</h3>
@@ -84,7 +84,7 @@
 						<a href="#">Veelgestelde vragen</a>
 					</li>
 				</ul>
-			</section> -->
+			</section>
 			<!-- EIND MOBILE NAV-->
 			<input type="text" placeholder="Waar bent u op naar zoek?">
 
@@ -98,7 +98,7 @@
 		<ul class="container">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="#">Kranen</a></li>
-			<li><a href="#">Wastafelkranen</a></li>
+			<li><a href="index.html">Wastafelkranen</a></li>
 			<li><a href="#">Inbouw Wastafelkraan Radius Black Steel, Eéngreeps Mengkraan, Zwart Metaal</a></li>
 		</ul>
 		<!--Globaal informatie product-->
@@ -107,14 +107,14 @@
 			<p>55.153.501ZMN</p>
 			<ul>
 				<li>
-					<img src="/images/product_page/product-pictures/inbouw-wastafelkraan.jpeg"
+					<img src="images/product_page/product-pictures/inbouw-wastafelkraan.jpeg"
 						alt="foto van inbouwwastafelkraan">
 				</li>
 				<li>
-					<img src="/images/product_page/product-pictures/badkamer.jpeg" alt="badkamer sfeer">
+					<img src="images/product_page/product-pictures/badkamer.jpeg" alt="badkamer sfeer">
 				</li>
 				<li>
-					<img src="/images/product_page/product-pictures/technisch-tekening.jpeg" alt="technisch-tekening">
+					<img src="images/product_page/product-pictures/technisch-tekening.jpeg" alt="technisch-tekening">
 				</li>
 			</ul>
 			<form>
@@ -125,14 +125,14 @@
 			<p>279,-</p>
 			<p>Vandaag besteld, dinsdag in huis</p>
 			<!--cta cart button-->
-			<!-- <section id="test">
+			<section>
 				<form>
 					<input type="number" placeholder="1" min="1" max="99"></input>
 					<button aria-label="plus 1 hoeveelheid">more</button>
 					<button aria-label="min 1 hoeveelheid">less</button>
 				</form>
 				<button aria-label="plaats in winkelwagen">Plaats in winkelwagen</button>
-			</section> -->
+			</section>
 
 			<p>Dit product is te bekijken in <strong>Utrecht, Roosendaal,</strong> en <strong>Rotterdam</strong></p>
 
@@ -156,21 +156,21 @@
 
 		</section>
 		<!--Product details-->
-		<article>
+		<article class="container">
 			<ul>
 				<li><a href="#productvoordelen">Productvoordelen</a></li>
 				<li><a href="#productomschrijving">Productomschrijving</a></li>
 				<li><a href="#specificaties">Specificaties</a></li>
 				<li><a href="#standaard_meegeleverd">Standaard Meegeleverd</a></li>
 				<li><a href="#downloads">Downloads</a></li>
-				<li><a href="FAQ">Faq</a></li>
+				<li><a href="#faq">Faq</a></li>
 			</ul>
 			<section>
 				<p>Let op</p>
 				<p>De kleurweergave van het product op uw beeldscherm kan afwijken van de daadwerkelijke productkleur.
 					Om zeker te zijn van de kleur, adviseren wij deze in één van onze showrooms te bekijken.</p>
 			</section>
-			<details>
+			<details open>
 				<summary id="productvoordelen">Productvoordelen</summary>
 				<ul>
 					<li>
@@ -196,13 +196,17 @@
 					</li>
 				</ul>
 			</details>
-			<details>
+			<details open>
 				<summary id="productomschrijving">Productomschrijving</summary>
-				Deze prachtige wastafelkraan uit de Radius-serie maakt uw badkamermeubel compleet en staat dagelijks
-				centraal bij uw persoonlijke verzorging. De kraan is eenvoudig te bedienen door middel van een hendel,
-				waarmee u zowel de temperatuur als de kracht van de straal bepaalt. Daarbij is de wastafelkraan voorzien
-				van Easy Clean en hierdoor zeer eenvoudig schoon te maken. Met slechts één vingerbeweging maakt u de
-				straalregelaar kalkvrij.
+				<p>
+					Deze prachtige wastafelkraan uit de Radius-serie maakt uw badkamermeubel compleet en staat dagelijks
+					centraal bij uw persoonlijke verzorging. De kraan is eenvoudig te bedienen door middel van een
+					hendel,
+					waarmee u zowel de temperatuur als de kracht van de straal bepaalt. Daarbij is de wastafelkraan
+					voorzien
+					van Easy Clean en hierdoor zeer eenvoudig schoon te maken. Met slechts één vingerbeweging maakt u de
+					straalregelaar kalkvrij.
+				</p>
 
 				<p>
 					<strong>Stijlvol design</strong>
@@ -234,7 +238,7 @@
 				</p>
 			</details>
 
-			<details>
+			<details open>
 				<summary id="specificaties">Specificaties</summary>
 				<!--bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl-->
 				<dl>
@@ -305,8 +309,8 @@
 					Pakket 1
 				</p>
 			</details>
-			<details>
-				<summary>Standaard meegeleverd</summary>
+			<details open>
+				<summary id="standaard_meegeleverd">Standaard meegeleverd</summary>
 				<ul>
 					<li>Inbouwdeel</li>
 					<li>Overloopcover</li>
@@ -316,30 +320,58 @@
 			</details>
 			<section>
 				<p>Let op</p>
-				<p>De kleur van de verschillende onderdelen/producten kunnen licht van elkaar afwijken. Daarnaast kan de kleur op natuurlijke wijze veranderen door aanrakingen en invloeden van buitenaf. Hierdoor komt de kleur tot leven en krijgt deze een unieke look.</p>
+				<p>De kleur van de verschillende onderdelen/producten kunnen licht van elkaar afwijken. Daarnaast kan de
+					kleur op natuurlijke wijze veranderen door aanrakingen en invloeden van buitenaf. Hierdoor komt de
+					kleur tot leven en krijgt deze een unieke look.</p>
 			</section>
-			<details>
-				<summary>Downloads</summary>
+			<details open>
+				<summary id="downloads">Downloads</summary>
 				<ul>
 					<li><a href="#">onderhoud-kranen-toebehoren.pdf</a></li>
 					<li><a href="#">garantie-kranen-toebehoren_0.pdf</a></li>
 				</ul>
 			</details>
 			<details>
-				<summary>Veelgestelde vragen</summary>
+				<summary id="faq">Veelgestelde vragen</summary>
 				<details>
 					<summary>Wat onderscheidt Maxaro-kranen van andere merken?</summary>
-					<p>Maxaro ontwikkelt eigen producten, waardoor wij alle kennis in huis hebben om u van deskundig advies te voorzien. Daarnaast bieden wij u een voor Nederland unieke eerstelijnsservice mét voorraadsysteem. Daardoor zijn we niet afhankelijk van externe leveranciers of producenten, en beschikt u snel over nieuwe of reserveonderdelen. Dit maakt dat wij met onze kranen een unieke marktpositie hebben.</p>
+					<p>Maxaro ontwikkelt eigen producten, waardoor wij alle kennis in huis hebben om u van deskundig
+						advies te voorzien. Daarnaast bieden wij u een voor Nederland unieke eerstelijnsservice mét
+						voorraadsysteem. Daardoor zijn we niet afhankelijk van externe leveranciers of producenten, en
+						beschikt u snel over nieuwe of reserveonderdelen. Dit maakt dat wij met onze kranen een unieke
+						marktpositie hebben.</p>
 				</details>
 				<details>
 					<summary>Hoeveel garantie heb ik op een kraan?</summary>
-					<p>Maxaro biedt u vanaf de datum van levering standaard twee of vijf jaar garantie op uw kraan. Bewaar uw oorspronkelijke factuur goed, want dit is uw bewijs van aankoop.</p>
+					<p>Maxaro biedt u vanaf de datum van levering standaard twee of vijf jaar garantie op uw kraan.
+						Bewaar uw oorspronkelijke factuur goed, want dit is uw bewijs van aankoop.</p>
 				</details>
 			</details>
 		</article>
 	</main>
 	<footer>
-
+		<section class="container">
+			<p>Heeft u vragen?</p>
+			<p>De medewerkers van onze klantenservice zijn vandaag bereikbaar tot 17.30</p>
+			<ul>
+				<li>
+					<a href="#">Bel 088 - 205 47 00</a>
+					<a href="#">Direct antwoord op uw vraag</a>
+				</li>
+				<li>
+					<a href="#">Chat met ons</a>
+					<a href="#">Stel direct uw vraag</a>
+				</li>
+				<li>
+					<a href="#">Stuur een e-mail</a>
+					<a href="#">Antwoord binnen 1 dag</a>
+				</li>
+				<li>
+					<a href="#">Bezoek onze showrooms</a>
+					<a href="#">Specialist in badkamers</a>
+				</li>
+			</ul>
+		</section>
 	</footer>
 	<script src="scripts/script.js"></script>
 </body>
