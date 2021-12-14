@@ -157,7 +157,7 @@ Wanneer je alleen TAB gebruik gaat die qua volgorder van links naar rechts naar 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
-#### Titel tweede bevinding. 
+#### Animatie
 Ons assortiment  anchor links in plaats van underline de tekst dikker maken tijdens hover zodat het makkelijker wordt om te zien en er ook mooier uitziet.
 <img src="readme_images/week_4/old_hover_ons_assortiment.png" alt="oud hover assortiment">
 
@@ -189,7 +189,7 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De laatste week was niet makkelijk. I.v.m. vormgeving moest ik veel inhalen voor FED. Ik moest toen keuzes maken wat ik nog ga maken. Of een makkelijk tweede pagina en extra animatie of een moeiijk pagina met minder animatie. Ik koos voor de tweede omdat ik responsive doe.
 
 
 ### Agenda voor meeting
@@ -197,7 +197,7 @@ samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| mijn slider in de home-page zag er niet goed uit  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
@@ -205,7 +205,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
+- gebruik maken van clamp
 - punt 2
 - nog een punt
 - ...
